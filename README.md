@@ -1,58 +1,104 @@
 # LiDAR-UAV-Autonomy
 
-This repository curates open-source resources for LiDAR-based autonomous UAVs, originally presented in Table I of our survey paper (cite your paper here if published). It aims to support the UAV autonomy research community with accessible, up-to-date tools and frameworks.
+This repository curates open-source resources for LiDAR-based autonomous UAVs, originally presented in Table I of our survey paper.
 
-## Open Source Resources
+```bib
+@article{ren2025lidar,
+  author  = {Ren, Yunfan and Cai, Yixi and Li, Haotian and Chen, Nan and Zhu, Fangcheng and Yin, Longji and Kong, Fanze and Li, Rundong and Zhang, Fu},
+  journal = {arXiv preprint arXiv:TODO},
+  title   = {A Survey on LiDAR-based Autonomous Aerial Vehicles},
+  year    = {2025}
+}
+```
 
-| **Name**                | **Category**                  | **Year** | **Link**                                                                 |
-|-------------------------|-------------------------------|----------|-------------------------------------------------------------------------|
-| OmniNxt                 | Hardware & Software (Vision)  | 2024     | [GitHub](https://github.com/HKUST-Aerial-Robotics/OmniNxt)             |
-| UniQuad                 | Hardware (LiDAR & Vision)     | 2024     | [GitHub](https://github.com/HKUST-Aerial-Robotics/UniQuad)             |
-| Agilicious              | Hardware & Software (Vision)  | 2023     | [GitHub](https://github.com/uzh-rpg/agilicious)                        |
-| PULSAR                  | Hardware (LiDAR)              | 2023     | [GitHub](https://github.com/hku-mars/PULSAR)                           |
-| Fast-Drone-250          | Hardware & Software (Vision)  | 2022     | [GitHub](https://github.com/ZJU-FAST-Lab/Fast-Drone-250)               |
-| Aerial Gym              | Simulator                     | 2024     | [GitHub](https://github.com/ntnu-arl/aerial_gym_simulator)             |
-| MARSIM                  | Simulator                     | 2023     | [GitHub](https://github.com/hku-mars/MARSIM)                           |
-| Flightmare              | Simulator                     | 2021     | [GitHub](https://github.com/uzh-rpg/flightmare)                        |
-| AirSim                  | Simulator                     | 2020     | [GitHub](https://microsoft.github.io/AirSim/)                          |
-| RotorS                  | Simulator                     | 2016     | [GitHub](https://github.com/ethz-asl/rotors_simulator)                 |
-| CLEARLAB                | Software Stack                | 2024     | [GitHub](https://github.com/Zhefan-Xu/CERLAB-UAV-Autonomy)             |
-| CMU                     | Software Stack                | 2020     | [GitHub](https://github.com/HongbiaoZ/autonomous_exploration_development_environment) |
-| DVLC                    | Calibration                   | 2023     | [GitHub](https://github.com/koide3/direct_visual_lidar_calibration)    |
-| LI-Init                 | Calibration                   | 2022     | [GitHub](https://github.com/hku-mars/LiDAR_IMU_Init)                   |
-| LVI-ExC                 | Calibration                   | 2022     | [GitHub](https://github.com/peterWon/LVI-ExC)                          |
-| lidar-camera-calib      | Calibration                   | 2021     | [GitHub](https://github.com/hku-mars/livox_camera_calib)               |
-| Kalibr                  | Calibration                   | 2016     | [GitHub](https://github.com/ethz-asl/kalibr)                           |
-| FAST-LIVO2              | Localization                  | 2024     | [GitHub](https://github.com/hku-mars/FAST-LIVO2)                       |
-| Swarm-LIO2              | Localization                  | 2024     | [GitHub](https://github.com/hku-mars/Swarm-LIO2)                       |
-| Point-LIO               | Localization                  | 2023     | [GitHub](https://github.com/hku-mars/Point-LIO)                        |
-| FAST-LIO2               | Localization                  | 2022     | [GitHub](https://github.com/hku-mars/FAST_LIO)                         |
-| LIO-SAM                 | Localization                  | 2020     | [GitHub](https://github.com/TixiaoShan/LIO-SAM)                        |
-| A-LOAM                  | Localization                  | 2020     | [GitHub](https://github.com/HKUST-Aerial-Robotics/A-LOAM)              |
-| ROG-Map                 | Mapping                       | 2024     | [GitHub](https://github.com/hku-mars/ROG-Map)                          |
-| D-Map                   | Mapping                       | 2024     | [GitHub](https://github.com/hku-mars/D-Map)                            |
-| FIESTA                  | Mapping                       | 2019     | [GitHub](https://github.com/HKUST-Aerial-Robotics/FIESTA)              |
-| Voxblox                 | Mapping                       | 2017     | [GitHub](https://github.com/ethz-asl/voxblox)                          |
-| OctoMap                 | Mapping                       | 2013     | [GitHub](https://github.com/OctoMap/octomap)                           |
-| PMM                     | Planner                       | 2024     | [GitHub](https://github.com/ctu-mrs/pmm_uav_planner)                   |
-| GCOPTER                 | Planner                       | 2022     | [GitHub](https://github.com/ZJU-FAST-Lab/GCOPTER)                      |
-| mintime-replan          | Planner                       | 2022     | [GitHub](https://github.com/uzh-rpg/sb_min_time_quadrotor_planning)    |
-| FASTER                  | Planner                       | 2021     | [GitHub](https://github.com/mit-acl/faster)                            |
-| time optimal            | Planner                       | 2021     | [GitHub](https://github.com/uzh-rpg/rpg_time_optimal)                  |
-| TRR                     | Planner                       | 2020     | [GitHub](https://github.com/HKUST-Aerial-Robotics/Teach-Repeat-Replan) |
-| FastPlanner             | Planner                       | 2020     | [GitHub](https://github.com/HKUST-Aerial-Robotics/Fast-Planner)        |
-| EGO-Planner             | Planner                       | 2020     | [GitHub](https://github.com/ZJU-FAST-Lab/ego-planner)                  |
-| IPC                     | Planner & Controller          | 2023     | [GitHub](https://github.com/hku-mars/IPC)                              |
-| Geometry Control        | Controller                    | 2021     | [GitHub](https://github.com/yorgoon/minimum-snap-geometric-control)    |
-| PMPC                    | Controller                    | 2018     | [GitHub](https://github.com/uzh-rpg/rpg_mpc)                           |
-| RPG Quad Control        | Controller                    | 2018     | [GitHub](https://github.com/uzh-rpg/rpg_quadrotor_control)             |
-| QuadRotor-Control       | Controller                    | 2018     | [GitHub](https://github.com/srikantrao/QuadRotor-Control)              |
-| PX4                     | Autopilot                     | -        | [GitHub](https://github.com/PX4)                                       |
-| Betaflight              | Autopilot                     | -        | [GitHub](https://github.com/betaflight/betaflight)                     |
-| ArduPilot               | Autopilot                     | -        | [GitHub](https://github.com/ArduPilot/ardupilot)                       |
+ It aims to support the UAV autonomy research community by providing accessible, up-to-date tools, frameworks, and resources for advancing LiDAR-based UAV technologies.
+
+## Resources by Category
+
+### Perception
+Includes tools and frameworks for localization, mapping, calibration, and software stacks focused on perception.
+
+| **Name**           | **Year** | **Link**                                                     |
+| ------------------ | -------- | ------------------------------------------------------------ |
+| FAST-LIVO2         | 2024     | [GitHub](https://github.com/hku-mars/FAST-LIVO2)             |
+| Swarm-LIO2         | 2024     | [GitHub](https://github.com/hku-mars/Swarm-LIO2)             |
+| ROG-Map            | 2024     | [GitHub](https://github.com/hku-mars/ROG-Map)                |
+| D-Map              | 2024     | [GitHub](https://github.com/hku-mars/D-Map)                  |
+| CLEARLAB           | 2024     | [GitHub](https://github.com/Zhefan-Xu/CERLAB-UAV-Autonomy)   |
+| Point-LIO          | 2023     | [GitHub](https://github.com/hku-mars/Point-LIO)              |
+| DVLC               | 2023     | [GitHub](https://github.com/koide3/direct_visual_lidar_calibration) |
+| FAST-LIO2          | 2022     | [GitHub](https://github.com/hku-mars/FAST_LIO)               |
+| LI-Init            | 2022     | [GitHub](https://github.com/hku-mars/LiDAR_IMU_Init)         |
+| LVI-ExC            | 2022     | [GitHub](https://github.com/peterWon/LVI-ExC)                |
+| lidar-camera-calib | 2021     | [GitHub](https://github.com/hku-mars/livox_camera_calib)     |
+| LIO-SAM            | 2020     | [GitHub](https://github.com/TixiaoShan/LIO-SAM)              |
+| A-LOAM             | 2020     | [GitHub](https://github.com/HKUST-Aerial-Robotics/A-LOAM)    |
+| CMU                | 2020     | [GitHub](https://github.com/HongbiaoZ/autonomous_exploration_development_environment) |
+| FIESTA             | 2019     | [GitHub](https://github.com/HKUST-Aerial-Robotics/FIESTA)    |
+| Voxblox            | 2017     | [GitHub](https://github.com/ethz-asl/voxblox)                |
+| Kalibr             | 2016     | [GitHub](https://github.com/ethz-asl/kalibr)                 |
+| OctoMap            | 2013     | [GitHub](https://github.com/OctoMap/octomap)                 |
+
+### Planning
+Includes planners and combined planner-controller frameworks.
+
+| **Name**       | **Year** | **Link**                                                     |
+| -------------- | -------- | ------------------------------------------------------------ |
+| SUPER            | 2024     | [GitHub](https://github.com/hku-mars/SUPER)         |
+| PMM            | 2024     | [GitHub](https://github.com/ctu-mrs/pmm_uav_planner)         |
+| IPC            | 2023     | [GitHub](https://github.com/hku-mars/IPC)                    |
+| GCOPTER        | 2022     | [GitHub](https://github.com/ZJU-FAST-Lab/GCOPTER)            |
+| mintime-replan | 2022     | [GitHub](https://github.com/uzh-rpg/sb_min_time_quadrotor_planning) |
+| FASTER         | 2021     | [GitHub](https://github.com/mit-acl/faster)                  |
+| time optimal   | 2021     | [GitHub](https://github.com/uzh-rpg/rpg_time_optimal)        |
+| TRR            | 2020     | [GitHub](https://github.com/HKUST-Aerial-Robotics/Teach-Repeat-Replan) |
+| FastPlanner    | 2020     | [GitHub](https://github.com/HKUST-Aerial-Robotics/Fast-Planner) |
+| EGO-Planner    | 2020     | [GitHub](https://github.com/ZJU-FAST-Lab/ego-planner)        |
+
+### Control
+Includes controllers for UAVs.
+
+| **Name**          | **Year** | **Link**                                                     |
+| ----------------- | -------- | ------------------------------------------------------------ |
+| Geometry Control  | 2021     | [GitHub](https://github.com/yorgoon/minimum-snap-geometric-control) |
+| PMPC              | 2018     | [GitHub](https://github.com/uzh-rpg/rpg_mpc)                 |
+| RPG Quad Control  | 2018     | [GitHub](https://github.com/uzh-rpg/rpg_quadrotor_control)   |
+| QuadRotor-Control | 2018     | [GitHub](https://github.com/srikantrao/QuadRotor-Control)    |
+
+### Hardware
+Includes hardware-related projects (LiDAR, vision, and simulators).
+
+| **Name**       | **Year** | **Link**                                                   |
+| -------------- | -------- | ---------------------------------------------------------- |
+| OmniNxt        | 2024     | [GitHub](https://github.com/HKUST-Aerial-Robotics/OmniNxt) |
+| UniQuad        | 2024     | [GitHub](https://github.com/HKUST-Aerial-Robotics/UniQuad) |
+| Aerial Gym     | 2024     | [GitHub](https://github.com/ntnu-arl/aerial_gym_simulator) |
+| Agilicious     | 2023     | [GitHub](https://github.com/uzh-rpg/agilicious)            |
+| PULSAR         | 2023     | [GitHub](https://github.com/hku-mars/PULSAR)               |
+| MARSIM         | 2023     | [GitHub](https://github.com/hku-mars/MARSIM)               |
+| Fast-Drone-250 | 2022     | [GitHub](https://github.com/ZJU-FAST-Lab/Fast-Drone-250)   |
+| Flightmare     | 2021     | [GitHub](https://github.com/uzh-rpg/flightmare)            |
+| AirSim         | 2020     | [GitHub](https://microsoft.github.io/AirSim/)              |
+| RotorS         | 2016     | [GitHub](https://github.com/ethz-asl/rotors_simulator)     |
+
+### Autopilots
+Includes autopilot frameworks.
+
+| **Name**   | **Year** | **Link**                                           |
+| ---------- | -------- | -------------------------------------------------- |
+| PX4        | -        | [GitHub](https://github.com/PX4)                   |
+| Betaflight | -        | [GitHub](https://github.com/betaflight/betaflight) |
+| ArduPilot  | -        | [GitHub](https://github.com/ArduPilot/ardupilot)   |
 
 ## Contributing
-Contributions are welcome! Please submit pull requests to add or update resources relevant to LiDAR-based UAV autonomy.
+
+We welcome contributions to expand and refine this collection! To add or update resources relevant to LiDAR-based UAV autonomy:
+1. Fork this repository.
+2. Add your resource to the appropriate category table in the README or include additional files if necessary.
+3. Submit a pull request with a brief description of your changes.
+
+Please ensure that all contributions are open-source and align with the focus of this repository.
 
 ## License
-This repository is licensed under the MIT License.
+
+This repository is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the content, provided the original license is included.
