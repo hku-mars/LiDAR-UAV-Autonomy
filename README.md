@@ -5,7 +5,7 @@ This repository curates open-source resources for LiDAR-based autonomous UAVs, o
 ```bib
 @article{ren2025lidar,
   author  = {Ren, Yunfan and Cai, Yixi and Li, Haotian and Chen, Nan and Zhu, Fangcheng and Yin, Longji and Kong, Fanze and Li, Rundong and Zhang, Fu},
-  journal = {arXiv preprint arXiv:TODO},
+  journal = {arXiv preprint},
   title   = {A Survey on LiDAR-based Autonomous Aerial Vehicles},
   year    = {2025}
 }
@@ -70,6 +70,7 @@ Includes hardware-related projects (LiDAR, vision, and simulators).
 
 | **Name**       | **Year** | **Link**                                                   |
 | -------------- | -------- | ---------------------------------------------------------- |
+| SUPER-Hardware        | 2025     | [GitHub](https://github.com/hku-mars/SUPER-Hardware) |
 | OmniNxt        | 2024     | [GitHub](https://github.com/HKUST-Aerial-Robotics/OmniNxt) |
 | UniQuad        | 2024     | [GitHub](https://github.com/HKUST-Aerial-Robotics/UniQuad) |
 | Aerial Gym     | 2024     | [GitHub](https://github.com/ntnu-arl/aerial_gym_simulator) |
