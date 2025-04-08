@@ -1,6 +1,6 @@
 # LiDAR-UAV-Autonomy
 
-This repository curates open-source resources for LiDAR-based autonomous UAVs, originally presented in Table I of our survey paper.
+This repository curates open-source resources for LiDAR-based autonomous UAVs, originally presented in Table I of our survey paper (TODO)
 
 ```bib
 @article{ren2025lidar,
